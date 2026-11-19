@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informasi katalog Senja Coffee.">
+  <title>Senja Coffee | Katalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">☕</span><span>senja<span class="brand-light">coffee</span><small>BREWED WITH WARMTH</small></span></a>
+      <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="katalog.html" class="active">Katalog</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <a class="nav-cta" href="katalog.html" class="active">Lihat Menu <span>↗</span></a>
+    </nav>
+  </header>
+<main>
+
+<section class="page-banner compact-banner"><div class="container"><p class="eyebrow light">OUR MENU</p><h1>Temukan <em>favoritmu.</em></h1><p>Diracik dengan hati, dinikmati kapan saja.</p></div></section>
+<section class="section-space"><div class="container">
+  <div class="catalog-top"><div><p class="eyebrow">DARI BAR SENJA</p><h2>Menu pilihan <em>kami.</em></h2></div>
+    <div class="catalog-controls"><label class="visually-hidden" for="search-menu">Cari menu</label><input id="search-menu" type="search" placeholder="Cari minuman..."><label class="visually-hidden" for="filter-menu">Filter kategori</label><select id="filter-menu"><option value="semua">Semua kategori</option><option value="coffee">Coffee</option><option value="non-coffee">Non Coffee</option><option value="snack">Snack</option></select></div>
+  </div>
+  <div class="product-grid" id="product-grid">
+    <article class="product-card" data-name="Senja Aren" data-category="coffee"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=85" alt="Es kopi susu gula aren"><div class="product-info"><span class="tag">COFFEE</span><h3>Senja Aren</h3><p>Espresso, susu segar, dan gula aren.</p><strong>Rp 25.000</strong></div></article>
+    <article class="product-card" data-name="Cappuccino" data-category="coffee"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85" alt="Cappuccino dengan latte art"><div class="product-info"><span class="tag">COFFEE</span><h3>Cappuccino</h3><p>Espresso dengan steamed milk dan foam lembut.</p><strong>Rp 28.000</strong></div></article>
+    <article class="product-card" data-name="Cold Brew" data-category="coffee"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85" alt="Cold brew kopi dalam gelas"><div class="product-info"><span class="tag">COFFEE</span><h3>Cold Brew</h3><p>Kopi seduh dingin dengan rasa halus.</p><strong>Rp 27.000</strong></div></article>
+    <article class="product-card" data-name="Cafe Latte" data-category="coffee"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=85" alt="Cafe latte hangat dalam cangkir"><div class="product-info"><span class="tag">COFFEE</span><h3>Café Latte</h3><p>Espresso dan susu dengan tekstur creamy.</p><strong>Rp 28.000</strong></div></article>
+    <article class="product-card" data-name="Matcha Cloud" data-category="non-coffee"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=85" alt="Minuman matcha hijau dengan susu"><div class="product-info"><span class="tag">NON COFFEE</span><h3>Matcha Cloud</h3><p>Matcha pilihan dengan susu segar.</p><strong>Rp 29.000</strong></div></article>
+    <article class="product-card" data-name="Chocolate Cream" data-category="non-coffee"><img src="https://images.unsplash.com/photo-1542990253-0b8be8c5f9d1?auto=format&fit=crop&w=800&q=85" alt="Minuman cokelat dingin"><div class="product-info"><span class="tag">NON COFFEE</span><h3>Chocolate Cream</h3><p>Cokelat kaya rasa dengan krim lembut.</p><strong>Rp 27.000</strong></div></article>
+    <article class="product-card" data-name="Butter Croissant" data-category="snack"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85" alt="Croissant mentega berlapis"><div class="product-info"><span class="tag">SNACK</span><h3>Butter Croissant</h3><p>Pastry renyah dengan aroma butter.</p><strong>Rp 22.000</strong></div></article>
+    <article class="product-card" data-name="Banana Bread" data-category="snack"><img src="https://images.unsplash.com/photo-1606101273945-e9eba8fa4b2a?auto=format&fit=crop&w=800&q=85" alt="Potongan roti pisang untuk teman kopi"><div class="product-info"><span class="tag">SNACK</span><h3>Banana Bread</h3><p>Roti pisang lembut, cocok untuk teman ngopi.</p><strong>Rp 20.000</strong></div></article>
+  </div>
+  <p class="empty-state" id="empty-state" hidden>Menu tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+  <p class="catalog-note">*Harga dan daftar menu di atas merupakan contoh untuk keperluan proyek.</p>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">☕</span><span>senja<span class="brand-light">coffee</span><small>BREWED WITH WARMTH</small></span></a><p>Ruang kecil untuk kopi, cerita,<br>dan momen yang berarti.</p></div>
+    <div><h3>Jelajahi</h3><a href="tentang.html">Tentang kami</a><a href="katalog.html">Menu kopi</a><a href="kontak.html">Hubungi kami</a></div>
+    <div><h3>Kunjungi</h3><p>Jl. Contoh No. 12, Jakarta<br>Senin–Minggu, 09.00–22.00</p><p>Instagram: @senjacoffee</p></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Senja Coffee. Dibuat dengan sepenuh hati.</span><span>GOOD DAYS START HERE ☼</span></div>
+</footer>
+</body>
+</html>

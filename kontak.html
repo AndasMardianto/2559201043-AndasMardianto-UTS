@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informasi kontak Senja Coffee.">
+  <title>Senja Coffee | Kontak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">☕</span><span>senja<span class="brand-light">coffee</span><small>BREWED WITH WARMTH</small></span></a>
+      <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+      <a class="nav-cta" href="katalog.html">Lihat Menu <span>↗</span></a>
+    </nav>
+  </header>
+<main>
+
+<section class="page-banner compact-banner"><div class="container"><p class="eyebrow light">SAY HELLO</p><h1>Mari bertemu<br><em>di Senja.</em></h1><p>Ada pertanyaan atau ingin menyapa? Kami siap mendengar.</p></div></section>
+<section class="section-space"><div class="container contact-grid">
+  <div class="contact-details"><p class="eyebrow">KUNJUNGI KAMI</p><h2>Secangkir hangat<br>selalu <em>menanti.</em></h2><p class="muted">Informasi di bawah merupakan data contoh dan perlu disesuaikan dengan alamat usaha sebenarnya.</p>
+    <div class="contact-item"><span class="contact-icon">⌖</span><div><h3>Alamat</h3><p>Air Gegas, Kabupaten Bangka Selatan,
+Kepulauan Bangka Belitung, Indonesia</p></div></div>
+    <div class="contact-item"><span class="contact-icon">◷</span><div><h3>Jam operasional</h3><p>Senin–Minggu · 09.00–22.00 WIB</p></div></div>
+    <div class="contact-item"><span class="contact-icon">✉</span><div><h3>Media sosial</h3><p>Instagram: @senjacoffee<br>Email: halo@senjacoffee.example</p></div></div>
+    <div class="map-frame"><iframe
+  title="Peta lokasi Air Gegas, Bangka Selatan"
+  src="https://www.google.com/maps?q=Air+Gegas,+Bangka+Selatan,+Kepulauan+Bangka+Belitung&output=embed"
+  width="100%"
+  height="100%"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe></div>
+  </div>
+  <div class="contact-form-wrap"><p class="eyebrow">KIRIM PESAN</p><h2>Ada yang bisa<br>kami <em>bantu?</em></h2>
+    <form id="contact-form" action="#" method="get">
+      <div class="form-row"><div class="form-group"><label for="nama">Nama lengkap</label><input type="text" id="nama" name="nama" placeholder="Nama kamu" required></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="nama@email.com" required></div></div>
+      <div class="form-group"><label for="telepon">Nomor HP</label><input type="tel" id="telepon" name="telepon" placeholder="081234567890" pattern="[0-9]{10,13}" title="Masukkan 10 sampai 13 digit angka tanpa spasi." required></div>
+      <div class="form-group"><label for="keperluan">Keperluan</label><select id="keperluan" name="keperluan" required><option value="">Pilih keperluan</option><option value="pertanyaan">Pertanyaan umum</option><option value="kerja-sama">Kerja sama</option><option value="saran">Saran dan masukan</option><option value="lainnya">Lainnya</option></select></div>
+      <div class="form-group"><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" rows="5" minlength="10" maxlength="500" placeholder="Ceritakan pesanmu (10–500 karakter)" required></textarea><small class="field-hint">Minimal 10 dan maksimal 500 karakter.</small></div>
+      <button class="button button-primary submit-button" type="submit">Kirim Pesan <span>↗</span></button>
+      <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+    </form>
+  </div>
+</div></section>
+<section class="hours-section"><div class="container hours-inner"><div><p class="eyebrow">PLAN YOUR VISIT</p><h2>Waktu terbaik<br><em>untuk singgah.</em></h2></div>
+<table class="hours-table"><thead><tr><th>Hari</th><th>Jam operasional</th></tr></thead><tbody><tr><td>Senin – Jumat</td><td>09.00 – 22.00</td></tr><tr><td>Sabtu</td><td>09.00 – 23.00</td></tr><tr><td>Minggu</td><td>10.00 – 22.00</td></tr></tbody></table></div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">☕</span><span>senja<span class="brand-light">coffee</span><small>BREWED WITH WARMTH</small></span></a><p>Ruang kecil untuk kopi, cerita,<br>dan momen yang berarti.</p></div>
+    <div><h3>Jelajahi</h3><a href="tentang.html">Tentang kami</a><a href="katalog.html">Menu kopi</a><a href="kontak.html">Hubungi kami</a></div>
+    <div><h3>Kunjungi</h3><p>Air Gegas, Bangka Selatan,
+Kepulauan Bangka Belitung<br>Senin–Minggu, 09.00–22.00</p><p>Instagram: @senjacoffee</p></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Senja Coffee. Dibuat dengan sepenuh hati.</span><span>GOOD DAYS START HERE ☼</span></div>
+</footer>
+</body>
+</html>
